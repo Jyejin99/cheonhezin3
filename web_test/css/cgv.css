@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+ol, ul{
+    list-style: none;
+}
+
+
+header{
+    width: 991px;
+    height: 112px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 101;
+}
+.cgvlogo{
+    width: 117px;
+    height: 53px;
+}
+.member{
+    display: flex;
+    align-items: center;
+}
+.contents ul li{
+    padding: 20px;
+    display: inline-block;
+}
+.contents{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 6px 25px 5px;
+    background-color: #fff;
+}
+.memberInfo_wrap a{
+    display: block;
+    position: relative;
+    padding-bottom: 19px;
+}
+.memberInfo_wrap img{
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+.memberInfo_wrap span{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.462em;
+    white-space: nowrap;
+    transform: translate(-50%, 0);
+}

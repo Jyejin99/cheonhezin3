@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>이미지 테스트</title>
+        <style>
+        div.main{
+            width: 100%;
+            border: 1px solid #FF0000;
+            display: flex;
+        }
+        div.left{
+            width: 35%;
+            float: left;
+            box-sizing: border-box;
+        }
+        div.right{
+            width: 65%;
+            box-sizing: border-box;
+        }    
+        </style>
+    </head>
+    <body>
+        <h1>오름</h1>
+        <h2>산굼부리</h2>
+        <div class="main">
+            <div class="left"><img src = "../img/sangumburi.jpg" alt="이미지 없음" width="100%"></div>
+            <div class="right">
+                <div>
+                    <h3>소개</h3>
+                </div>  
+                <div>  
+                    <p>
+                        산굼부리는 제주특별자치도의 천연기념물 제263호로 지정된 분화구이다. 
+                        '굼부리'는 화산체의 분화구를 일컫는 제주말이다. 360여개의 한라산
+                        기생화산 중의 하나이지만, 다른 기생화산들과는 달리 커다란 분화구를 
+                        가지고 있는데, 산체에 비해서 화구의 크기가 비교적 큰 편이라는 점에서
+                        특이하다.
+                    </p>
+                </div>
+            </div>
+        </div>   
+    </body>
+</html>
+
+<!--src : 이미지 파일의 경로. 필수 속성-->
+<!--alt : 화면 리더기 등에서 이미지를 대신해 읽어줄 대체 텍스트-->
+<!--width, height : 이미지의 넓이, 높이를 지정-->
+<!--solid : 테두리 색 지정-->
