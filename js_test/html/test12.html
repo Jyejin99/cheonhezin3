@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case2</title>
+</head>
+<body>
+    <img id="s_img" src="#" width="300px">
+
+    <script>
+        s = document.getElementById("s_img");
+        var month = prompt("월 입력");
+        src_link = "";
+        switch(month){
+            case "12":
+            case "1":
+            case "2":
+                src_link = "../img/winter.jpg";
+                break;
+            case "3":
+            case "4":
+            case "5":
+                src_link = "../img/spring.jpg";
+                break;
+            case "6":
+            case "7":
+            case "8":
+                src_link = "../img/summer.jpg";
+                break;
+            case "9":
+            case "10":
+            case "11":
+                src_link = "../img/fall.jpg";
+                break;
+        }
+        s.src=src_link;
+    </script>
+</body>
+</html>

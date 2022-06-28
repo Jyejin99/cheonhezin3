@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm</title>
+</head>
+<body>
+    <script>
+        var reply = confirm("당신은 사람입니까?")
+        if (reply==true){
+            document.write("<img src='../img/people.png' width='500px'>"+"당신은 사람이군요.");
+        }
+        else document.write("<img src='../img/golila.jpg' width='500px'>"+"당신은 유인원이군요.");
+    //confirm: alert와 달리 확인과 취소 두 가지 선택지가 있음.
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경품</title>
+</head>
+    <style>
+        body{
+            text-align: center;
+            font-size: 20px;
+        }
+        p{
+            padding: 20px auto;
+        }
+        .title{
+            padding: 5px;
+            border: 1px solid #ccc;
+            background: #b2fea7;
+        }
+        #total, #result{
+            width: auto;
+            padding-left: 20px;
+            color: red;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+<body>
+    <img src="../img/dice.png">
+
+    <p><span class="title">전체 응모자 수: </span><span id="total"></span></p>
+    <p><span class="title">당첨 번호: </span><span id="result"></span></p>
+
+    <script>
+        var seed = prompt("전체 응모자 수: ");
+
+        var today = new Date();
+        var current = today.getSeconds();
+        var rnum = (current % seed)+1;
+
+        var totalArea = document.getElementById("total");
+        var resultArea = document.getElementById("result");
+        totalArea.innerHTML = seed + "명";
+        resultArea.innerHTML = rnum + "번!!";
+
+    </script>
+</body>
+</html>

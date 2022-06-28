@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문</title>
+
+
+</head>
+<body>
+    <script>
+        var grade = prompt("몇 학년인가요? (1~4)");
+
+        if(grade == 1)
+        {
+            document.body.style.backgroundColor="pink";
+            document.write("<p>1학년은 실습실 3-A로 가세요.</p>");
+            document.write("<p>그 후 강당으로 모이세요.</p>");
+        }
+        else if(grade==2) document.write("<p>2학년은 실습실 3-B로 가세요.</p>"), document.body.style.backgroundColor="orange";
+        else if(grade==3) document.write("<p>3학년은 실습실 3-C로 가세요.</p>"), document.body.style.backgroundColor="green";
+        else if(grade==4) document.write("<p>4학년은 실습실 3-D로 가세요.</p>"), document.body.style.backgroundColor="yellow";
+        else document.write("잘못 입력했습니다.");
+    </script>
+</body>
+</html>
