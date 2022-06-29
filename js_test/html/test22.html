@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeTo(myImg){
+            var myNum = document.getElementById("num");
+            myNum.src = myImg;
+        }
+        function changeTo2(flowerImg){
+            var myMenu = document.getElementById("menu");
+            myMenu.src = flowerImg;
+        }
+    </script>
+    <style>
+        .season{
+            text-align: center;
+        }
+        img{
+            width: 500px;
+            height: 300px;
+            padding-top: 10px;
+        }
+        input{
+            border: 0;
+            width: 120px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .spring{
+            background-color: pink;
+        }
+        .summer{
+            background-color: rgb(242, 255, 56);
+        }
+        .fall{
+            background-color: orange;
+        }
+        .winter{
+            background-color: skyblue;
+        }
+        ul li{
+            list-style: none;
+        }
+        .nav_wrap{
+            text-align: center;
+        }
+        .nav ul li{
+            display: inline-block;
+            padding-right: 70px;
+            cursor: pointer;
+        }
+        .nav ul li:hover{
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "season">
+        <form>
+            <input type = "button" value = "봄으로 바꾸기" onclick="changeTo('../img/spring.jpg')" class="spring">
+            <input type = "button" value = "여름으로 바꾸기" onclick="changeTo('../img/summer.jpg')" class="summer">
+            <input type = "button" value = "가을로 바꾸기" onclick="changeTo('../img/fall.jpg')" class="fall">
+            <input type = "button" value = "겨울로 바꾸기" onclick="changeTo('../img/winter.jpg')" class="winter">
+        </form>
+        <div>
+            <img src="../img/spring.jpg" id="num">
+        </div>
+    </div>
+    <div class="nav_wrap">
+        <div>
+            <img src="../img/spring_flower.jpg" id="menu">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a onclick="changeTo2('../img/spring_flower.jpg')">봄 꽃</a></li>
+                <li><a onclick="changeTo2('../img/summer_flower.jpg')">여름 꽃</a></li>
+                <li><a onclick="changeTo2('../img/fall_flower.jpg')">가을 꽃</a></li>
+                <li><a onclick="changeTo2('../img/winter_flower.jpg')">겨울 꽃</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

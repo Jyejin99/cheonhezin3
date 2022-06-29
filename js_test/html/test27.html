@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 15px;
+            line-height: 30px;
+        }
+        input{
+            margin: 10px 40px;
+        }
+        div{
+            width: 400px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 30px;
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            vertical-align: middle;
+            margin: 20px 0 20px 0;
+        }
+    </style>
+    <script>
+        function changeTo(myImg){
+            document.getElementById("num").src=myImg;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <img src="../img/face1.png" id="num" onmouseover="changeTo('../img/face2.png')" onmouseout="changeTo('../img/face1.png')">
+    </div>
+</body>
+</html>

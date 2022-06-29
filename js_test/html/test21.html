@@ -9,32 +9,35 @@
 <body>
     <script>
         //문제6. 사용자가 입력한 사칙연산기호를 이용하여 두 개의 수 입력받고, 연산 후 출력하는 프로그램 개발
-        
-        var operation = prompt("연산을 입력해주세요.(+,-,*,/) 종료하려면 q");
-        switch(operation){
-            case "+":
-                var num1 = Number(prompt("첫 번째 숫자를 입력하시오."));
-                var num2 = Number(prompt("두 번째 숫자를 5입력하시오."));
-                document.write(num1,"+",num2," = ",num1+num2,"<br>");
-                break;
-            case "-":
-                var num1 = Number(prompt("첫 번째 숫자를 입력하시오."));
-                var num2 = Number(prompt("두 번째 숫자를 입력하시오."));
-                document.write(num1,"+",num2," = ",num1-num2,"<br>");
-                break;
-            case "*":
-                var num1 = Number(prompt("첫 번째 숫자를 입력하시오."));
-                var num2 = Number(prompt("두 번째 숫자를 입력하시오."));
-                document.write(num1,"+",num2," = ",num1*num2,"<br>");
-                break;
-            case "/":
-                var num1 = Number(prompt("첫 번째 숫자를 입력하시오."));
-                var num2 = Number(prompt("두 번째 숫자를 입력하시오."));
-                document.write(num1,"+",num2," = ",num1/num2,"<br>");
-                break;
-            case "q":
-                document.write("프로그램을 종료합니다.");
-                break;
+        state = 0;
+        while(state==0){
+            var operation = prompt("연산을 입력해주세요.(+,-,*,/) 종료하려면 q");
+            switch(operation){
+                case "+":
+                    var num1 = prompt("첫 번째 숫자를 입력하시오.");
+                    var num2 = prompt("두 번째 숫자를 5입력하시오.");
+                    document.write(num1,"+",num2," = ",(num1+num2),"<br>");
+                    break;
+                case "-":
+                    var num1 = prompt("첫 번째 숫자를 입력하시오.");
+                    var num2 = prompt("두 번째 숫자를 입력하시오.");
+                    document.write(num1,"-",num2," = ",(num1-num2),"<br>");
+                    break;
+                case "*":
+                    var num1 = prompt("첫 번째 숫자를 입력하시오.");
+                    var num2 = prompt("두 번째 숫자를 입력하시오.");
+                    document.write(num1,"*",num2," = ",(num1*num2),"<br>");
+                    break;
+                case "/":
+                    var num1 = prompt("첫 번째 숫자를 입력하시오.");
+                    var num2 = prompt("두 번째 숫자를 입력하시오.");
+                    document.write(num1,"/",num2," = ",parseInt(num1/num2),"<br>");
+                    break;
+                case "q":
+                    document.write("입력 연산 결과입니다.");
+                    state=1;
+                    break;
+            }
         }
     </script>
 </body>

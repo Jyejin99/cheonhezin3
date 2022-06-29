@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 연습</title>
+    <style>
+        a, a:visited{
+            text-decoration: none;
+            color: #222;
+        }
+        img{
+            width: 130px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function change(newSrc){
+            letters = document.getElementsByTagName("img");
+            letters[4].src = newSrc;
+        }
+    </script>
+</head>
+<body>
+    <h1>웹 표준 기술은?</h1>
+    <p>숫자 4를 클릭하세요.</p>
+    <img src="../img/cc.png">
+    <img src="../img/c.png">
+    <img src="../img/java.png">
+    <img src="../img/sql.png">
+    <img src="../img/4.png" onclick="change('../img/html5.png')">
+</body>
+</html>
