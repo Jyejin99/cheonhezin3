@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+ol, ul{
+    list-style: none;
+}
+header{
+    width: 991px;
+    height: 112px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 101;
+}
+.cgvlogo{
+    position: absolute;
+    top: 2px;
+    width: 70px;
+}
+h1 span{
+    position: absolute;
+    font-weight: 300;
+    font-size: 16px;
+    color: #222;
+    letter-spacing: 0.313em;
+    line-height: 1.500em;
+    margin: 30px 0px 0px 90px;
+}
+.member{
+    display: flex;
+    align-items: center;
+}
+.contents{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 6px 25px 5px;
+    background-color: #fff;
+}
+.memberInfo_wrap{
+    align-items: center;
+    display: flex;
+}
+.memberInfo_wrap li{
+    margin-left: 44px;
+    margin-top: 2px;
+}
+.memberInfo_wrap a{
+    display: block;
+    position: relative;
+    padding-bottom: 19px;
+}
+.memberInfo_wrap li img{
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+.memberInfo_wrap span{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.462em;
+    white-space: nowrap;
+    transform: translate(-50%, 0);
+}
+.header_menu{
+    position: relative;
+}
+.nav_menu{
+    display: inline-flex;
+    position: absolute;
+}
+.nav_menu ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.nav_menu li{
+    padding: 20px 20px;
+}
+.nav_menu a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.500em;
+}
+.totalSearch_wrap{
+    display: inline-flex;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    padding: 0 36px 0 10px;
+}
+.totalSearch_wrap label{
+    display: block;
+}
+.totalSearch_wrap label input{
+    width: 180px;
+    height: auto;
+    padding: 0 0 0 7px;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.500em;
+    border: none;
+    vertical-align: center;
+    overflow: visible;
+}
+.totalSearch_wrap::before{
+    content: '';
+    position: absolute;
+    left: 18vw;
+    width: 1px;
+    top: 2px;
+    height: 20px;
+    background-color: #cacaca;
+}
+.totalSearch_wrap::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    top: 2px;
+    height: 20px;
+    background-color: #cacaca;
+}
+button{
+    border: 0 none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.btn_totalSearch{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: -1px;
+    width: 26px;
+    height: 26px;
+    font-size: 0;
+    line-height: 0;
+    background: transparent url(../img/search.png) center/26px scroll no-repeat;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+.banner img{
+    width: 991px;
+    height: 300px;
+}
+main{
+    width: 991px;
+    height: 1040px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 101;
+}
