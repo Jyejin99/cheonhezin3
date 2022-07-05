@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+header{
+    width: 1480px;
+    height: 110px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 101;
+    background-color: rgb(47, 47, 104);
+}
+.logo{
+    position: absolute;
+    width: 60px;
+    left: 50px;
+    top: 20px;
+}
+.logoTitle{
+    position: absolute;
+    color: white;
+    top: 20px;
+    left: 130px;
+    font-size: 40px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-weight: 50;
+}
+.menu_wrap{
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    display: flex;
+}
+.menu_wrap span{
+    font-size: 20px;
+    padding: 0 10px 0 30px;
+    color: white;
+}
+
+main{
+    position: relative;
+    width: 1480px;
+    margin: 0 auto;
+}
+.contents_wrap{
+    position: relative;
+    text-align: center;
+}
+.title{
+    padding-top: 80px;
+    font-size: 14px;
+}
+.categori{
+    padding-top: 80px;
+}
+.categori_list{
+    position: relative;
+}
+.categori_list li{
+    display: inline-flex;
+    padding-right: 10px;
+    
+}
+.categori_list a{
+    width: 200px;
+    display: block;
+    position: relative;
+}
+.categori_list li img{
+    width: 45px;
+    height: 45px;
+    vertical-align:middle;
+    padding-right: 10px;
+}
+.categori_list li span{
+    font-size: 24px;
+    color:rgb(47, 47, 104);
+    font-weight: 600;
+}
+hr{
+    margin-top: 30px;
+    height: 1px;
+}
+.app_wrap{
+    position: relative;
+    margin-top: 0px;
+    width: 1480px;
+    background-color: rgb(238, 238, 238);
+}
+.app_wrap h1{
+    padding-top: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+.app_list{
+    position: relative;
+}
+.app_list li{
+    position: relative;
+    display: inline-flex;
+    margin: 40px 0 0 75px;
+    width: 1300px;
+    height: 320px;
+    background-color: white;
+    color: black;
+}
+.app_list li h2{
+    position: absolute;
+    left: 400px;
+    padding: 40px 0 0 10px;
+}
+.app_list .app_img{
+    position: absolute;
+    padding: 100px 0 0 40px;
+    width: 280px;
+    height: 100px;
+}
+.app_list li span{
+    position: absolute;
+    left: 400px;
+    width: 800px;
+    padding: 100px 20px 20px 10px;
+}
+.icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 20px 10px 0;
+}
+.icon .icon_img{
+    width: 50px;
+    padding-right: 20px;
+}
